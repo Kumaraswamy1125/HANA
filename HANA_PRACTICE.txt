@@ -1,4 +1,12 @@
 
+SAP HANA Remote Desktop IP:  183.82.125.202:3315
+
+Username : HANA44     password : ora@9kum
+Git Hub 
+===========
+https://github.com/Kumaraswamy1125/HANA
+
+
 
 student TABLE 
 ==============
@@ -17,9 +25,10 @@ DOB 		 Date
 CREATE COLUMN TABLE ADDRESS
 (
 STUDENT_ID 	Integer NOT NULL PRIMARY KEY(STUDENT_ID) ,
-STATE 		NVARCHAR(100) ,
-COUNTRY		NVARCHAR(100),
+EMP_ID 		Integer Not null Primary key (EMP_ID) ,
 CITY		NVARCHAR(100)
+STATE 		NVARCHAR(100),
+COUNTRY		NVARCHAR(100)
 );
 
 Employee table 
