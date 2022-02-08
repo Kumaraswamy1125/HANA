@@ -1,0 +1,58 @@
+
+
+student TABLE 
+==============
+
+CREATE COLUMN TABLE STUDENT 
+(
+STUDENT_ID	 Integer NOT NULL PRIMARY KEY(STUDENT_ID) ,
+NAME 		 NVARCHAR(200),
+PHONE_NUMBER	 Integer,
+GENDER  	 char(1),
+DOB 		 Date
+);
+
+ Address table 
+==========
+CREATE COLUMN TABLE ADDRESS
+(
+STUDENT_ID 	Integer NOT NULL PRIMARY KEY(STUDENT_ID) ,
+STATE 		NVARCHAR(100) ,
+COUNTRY		NVARCHAR(100),
+CITY		NVARCHAR(100)
+);
+
+Employee table 
+===========
+CREATE COLUMN TABLE EMPLOYEE 
+(
+EMP_ID 		Integer Not null Primary key (EMP_ID) ,
+NAME 		NVARCHAR(200) ,
+HIRE_DATE 	Date  ,
+SALARY 		Integer,
+PAYMENT_TYPE CHAR(1)
+
+);
+
+DEPT table 
+===========
+CREATE COLUMN TABLE DEPT
+(
+EMP_ID 		Integer Not null Primary key (EMP_ID) ,
+DEPT_NAME	Nvarchar(100),
+DEPT_ID 	Integer ,
+LOCATION 	Nvarchar(100)
+) 
+
+PAYMENT TABLE 
+================
+CREATE COLUMN TABLE PAYMENT_METHOD
+(
+PAYMENT_TYPE CHAR(1)  PRIMARY KEY ("PAYMENT_TYPE"),
+PAYMENT_DATE DATE,
+DESCRIPTION" NVARCHAR(300)
+
+ )
+
+
+ 
